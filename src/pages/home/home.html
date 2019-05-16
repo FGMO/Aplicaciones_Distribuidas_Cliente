@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-input [(ngModel)]="email" style="width: 265px; height: 35px;"  type="text" value="" #username placeholder="Usuario (Direccon de correo)" class="center"></ion-input><br>
+  <ion-input [(ngModel)]="clave" style="width: 265px; height: 35px;"  type="password" value="" #username placeholder="Clave" class="center"></ion-input><br>
+
+  <button  style="width: 265px; height: 35px;  border-radius: 6px;" block ion-button (click)="login()" class="center" color="secondary">Iniciar</button><br><br>
+
+</ion-content>
